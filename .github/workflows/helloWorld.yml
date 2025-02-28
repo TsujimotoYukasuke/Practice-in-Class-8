@@ -11,10 +11,17 @@ on:
 
 # Workflow / Jobs
 jobs:
-  hello:
+  hello-1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Hello
-        run: echo "Hello World"
+      - name: Hello 1
+        run: echo "Hello World 1"
+        shell: bash
+  hello-2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Hello 2
+        run: echo "Hello World 2"
         shell: bash
